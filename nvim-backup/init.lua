@@ -19,10 +19,13 @@ Kickstart.nvim is a template for your own configuration.
 
 
   And then you can explore or search through `:help lua-guide`
+  - https://neovim.io/doc/user/lua-guide.html
 
 
-Kickstart Guide
-u should run that command and read that help section for more information.
+Kickstart Guide:
+
+I have left several `:help X` comments throughout the init.lua
+You should run that command and read that help section for more information.
 
 In addition, I have some `NOTE:` items throughout the file.
 These are for you, the reader to help understand what is happening. Feel free to delete
@@ -62,6 +65,8 @@ vim.opt.rtp:prepend(lazypath)
 --  You can also configure plugins after the setup call,
 --    as they will be available in your neovim runtime.
 require('lazy').setup({
+  -- NOTE: First, some plugins that don't require any configuration
+
   -- Git related plugins
   'tpope/vim-fugitive',
   'tpope/vim-rhubarb',
@@ -81,7 +86,7 @@ require('lazy').setup({
 
       -- Useful status updates for LSP
       -- NOTE: `opts = {}` is the same as calling `require('fidget').setup({})`
-      { 'j-hui/fidget.nvim',       tag = 'legacy', opts = {} },
+      { 'j-hui/fidget.nvim', tag = 'legacy', opts = {} },
 
       -- Additional lua configuration, makes nvim stuff amazing!
       'folke/neodev.nvim',
@@ -104,341 +109,148 @@ require('lazy').setup({
     },
   },
 
-
   -- Useful plugin to show you pending keybinds.
+  { 'folke/which-key.nvim', opts = {} },
   {
-    'folke/which-key.nvim',
+    -- Adds git related signs to the gutter, as well as utilities for managing changes
+    'lewis6991/gitsigns.nvim',
     opts = {
-      defaults = {
-        ["<leader>d"] = { name = "+debug" }, }
-    },
-    {
-      -- Adds git related signs to the gutter, as well as utilities for managing changes
-      'lewis6991/gitsigns.nvim',
-      opts = {
-        -- See `:help gitsigns.txt`
-        signs = {
-          add = { text = '+' },
-          change = { text = '~' },
-          delete = { text = '_' },
-          topdelete = { text = '‾' },
-          changedelete = { text = '~' },
-        },
-        on_attach = function(bufnr)
-          vim.keymap.set('n', '<leader>hp', require('gitsigns').preview_hunk,
-            { buffer = bufnr, desc = 'Preview git hunk' })
+      -- See `:help gitsigns.txt`
+      signs = {
+        add = { text = '+' },
+        change = { text = '~' },
+        delete = { text = '_' },
+        topdelete = { text = '‾' },
+        changedelete = { text = '~' },
+      },
+      on_attach = function(bufnr)
+        vim.keymap.set('n', '<leader>hp', require('gitsigns').preview_hunk, { buffer = bufnr, desc = 'Preview git hunk' })
 
-          -- don't override the built-in and fugitive keymaps
-          local gs = package.loaded.gitsigns
-          vim.keymap.set({ 'n', 'v' }, ']c', function()
-            if vim.wo.diff then return ']c' end
-            vim.schedule(function() gs.next_hunk() end)
-            return '<Ignore>'
-          end, { expr = true, buffer = bufnr, desc = "Jump to next hunk" })
-          vim.keymap.set({ 'n', 'v' }, '[c', function()
-            if vim.wo.diff then return '[c' end
-            vim.schedule(function() gs.prev_hunk() end)
-            return '<Ignore>'
-          end, { expr = true, buffer = bufnr, desc = "Jump to previous hunk" })
+        -- don't override the built-in and fugitive keymaps
+        local gs = package.loaded.gitsigns
+        vim.keymap.set({'n', 'v'}, ']c', function()
+          if vim.wo.diff then return ']c' end
+          vim.schedule(function() gs.next_hunk() end)
+          return '<Ignore>'
+        end, {expr=true, buffer = bufnr, desc = "Jump to next hunk"})
+        vim.keymap.set({'n', 'v'}, '[c', function()
+          if vim.wo.diff then return '[c' end
+          vim.schedule(function() gs.prev_hunk() end)
+          return '<Ignore>'
+        end, {expr=true, buffer = bufnr, desc = "Jump to previous hunk"})
+      end,
+    },
+  },
+
+  {
+    -- Theme inspired by Atom
+    'navarasu/onedark.nvim',
+    priority = 1000,
+    config = function()
+      vim.cmd.colorscheme 'onedark'
+    end,
+  },
+
+  {
+    -- Set lualine as statusline
+    'nvim-lualine/lualine.nvim',
+    -- See `:help lualine.txt`
+    opts = {
+      options = {
+        icons_enabled = false,
+        theme = 'onedark',
+        component_separators = '|',
+        section_separators = '',
+      },
+    },
+  },
+
+  {
+    -- Add indentation guides even on blank lines
+    'lukas-reineke/indent-blankline.nvim',
+    -- Enable `lukas-reineke/indent-blankline.nvim`
+    -- See `:help indent_blankline.txt`
+    opts = {
+      char = '┊',
+      show_trailing_blankline_indent = false,
+    },
+  },
+
+  -- "gc" to comment visual regions/lines
+  { 'numToStr/Comment.nvim', opts = {} },
+
+  -- Fuzzy Finder (files, lsp, etc)
+  {
+    'nvim-telescope/telescope.nvim',
+    branch = '0.1.x',
+    dependencies = {
+      'nvim-lua/plenary.nvim',
+      -- Fuzzy Finder Algorithm which requires local dependencies to be built.
+      -- Only load if `make` is available. Make sure you have the system
+      -- requirements installed.
+      {
+        'nvim-telescope/telescope-fzf-native.nvim',
+        -- NOTE: If you are having trouble with this installation,
+        --       refer to the README for telescope-fzf-native for more instructions.
+        build = 'make',
+        cond = function()
+          return vim.fn.executable 'make' == 1
         end,
       },
     },
-    --DAP ui
-    {
-      "mfussenegger/nvim-dap",
-
-      dependencies = {
-
-        -- fancy UI for the debugger
-        {
-          "rcarriga/nvim-dap-ui",
-          -- stylua: ignore
-          keys = {
-            { "<leader>du", function() require("dapui").toggle({}) end, desc = "Dap UI" },
-            { "<leader>de", function() require("dapui").eval() end,     desc = "Eval",  mode = { "n", "v" } },
-          },
-          opts = {},
-          config = function(_, opts)
-            -- setup dap config by VsCode launch.json file
-            -- require("dap.ext.vscode").load_launchjs()
-            local dap = require("dap")
-            local dapui = require("dapui")
-            dapui.setup(opts)
-            dap.listeners.after.event_initialized["dapui_config"] = function()
-              dapui.open({})
-            end
-            dap.listeners.before.event_terminated["dapui_config"] = function()
-              dapui.close({})
-            end
-            dap.listeners.before.event_exited["dapui_config"] = function()
-              dapui.close({})
-            end
-          end,
-        },
-
-        -- virtual text for the debugger
-        {
-          "theHamsta/nvim-dap-virtual-text",
-          opts = {},
-        },
-
-        -- which key integration
-        {
-          "folke/which-key.nvim",
-          optional = true,
-          opts = {
-            defaults = {
-              ["<leader>d"] = { name = "+debug" },
-            },
-          },
-        },
-
-        -- mason.nvim integration
-        {
-          "jay-babu/mason-nvim-dap.nvim",
-          dependencies = "mason.nvim",
-          cmd = { "DapInstall", "DapUninstall" },
-          opts = {
-            -- Makes a best effort to setup the various debuggers with
-            -- reasonable debug configurations
-            automatic_installation = true,
-
-            -- You can provide additional configuration to the handlers,
-            -- see mason-nvim-dap README for more information
-            handlers = {},
-
-            -- You'll need to check that you have the required things installed
-            -- online, please don't ask me how to install them :)
-            ensure_installed = {
-              -- Update this to ensure that you have the debuggers for the langs you want
-            },
-          },
-        },
-      },
-
-      -- stylua: ignore
-      keys = {
-        {
-          "<leader>dB",
-          function() require("dap").set_breakpoint(vim.fn.input('Breakpoint condition: ')) end,
-          desc =
-          "Breakpoint Condition"
-        },
-        {
-          "<leader>db",
-          function() require("dap").toggle_breakpoint() end,
-          desc =
-          "Toggle Breakpoint"
-        },
-        {
-          "<leader>dc",
-          function() require("dap").continue() end,
-          desc =
-          "Continue"
-        },
-        {
-          "<leader>da",
-          function() require("dap").continue({ before = get_args }) end,
-          desc =
-          "Run with Args"
-        },
-        {
-          "<leader>dC",
-          function() require("dap").run_to_cursor() end,
-          desc =
-          "Run to Cursor"
-        },
-        {
-          "<leader>dg",
-          function() require("dap").goto_() end,
-          desc =
-          "Go to line (no execute)"
-        },
-        {
-          "<leader>di",
-          function() require("dap").step_into() end,
-          desc =
-          "Step Into"
-        },
-        {
-          "<leader>dj",
-          function() require("dap").down() end,
-          desc =
-          "Down"
-        },
-        { "<leader>dk", function() require("dap").up() end, desc = "Up" },
-        {
-          "<leader>dl",
-          function() require("dap").run_last() end,
-          desc =
-          "Run Last"
-        },
-        {
-          "<leader>do",
-          function() require("dap").step_out() end,
-          desc =
-          "Step Out"
-        },
-        {
-          "<leader>dO",
-          function() require("dap").step_over() end,
-          desc =
-          "Step Over"
-        },
-        {
-          "<leader>dp",
-          function() require("dap").pause() end,
-          desc =
-          "Pause"
-        },
-        {
-          "<leader>dr",
-          function() require("dap").repl.toggle() end,
-          desc =
-          "Toggle REPL"
-        },
-        {
-          "<leader>ds",
-          function() require("dap").session() end,
-          desc =
-          "Session"
-        },
-        {
-          "<leader>dt",
-          function() require("dap").terminate() end,
-          desc =
-          "Terminate"
-        },
-        {
-          "<leader>dw",
-          function() require("dap.ui.widgets").hover() end,
-          desc =
-          "Widgets"
-        },
-      },
-
-      config = function()
-        local Config = require("lazyvim.config")
-        vim.api.nvim_set_hl(0, "DapStoppedLine", { default = true, link = "Visual" })
-
-        for name, sign in pairs(Config.icons.dap) do
-          sign = type(sign) == "table" and sign or { sign }
-          vim.fn.sign_define(
-            "Dap" .. name,
-            { text = sign[1], texthl = sign[2] or "DiagnosticInfo", linehl = sign[3], numhl = sign[3] }
-          )
-        end
-      end,
-    },
-    -- End DAP
-    {
-      -- Theme inspired by Atom
-      'navarasu/onedark.nvim',
-      priority = 1000,
-      config = function()
-        vim.cmd.colorscheme 'onedark'
-      end,
-    },
-
-    {
-      -- Set lualine as statusline
-      'nvim-lualine/lualine.nvim',
-      -- See `:help lualine.txt`
-      opts = {
-        options = {
-          icons_enabled = false,
-          theme = 'onedark',
-          component_separators = '|',
-          section_separators = '',
-        },
-      },
-    },
-
-    {
-      -- Add indentation guides even on blank lines
-      'lukas-reineke/indent-blankline.nvim',
-      -- Enable `lukas-reineke/indent-blankline.nvim`
-      -- See `:help indent_blankline.txt`
-      opts = {
-        char = '┊',
-        show_trailing_blankline_indent = false,
-      },
-    },
-    -- "gc" to comment visual regions/lines
-    { 'numToStr/Comment.nvim', opts = {} },
-
-    -- Fuzzy Finder (files, lsp, etc)
-    {
-      'nvim-telescope/telescope.nvim',
-      branch = '0.1.x',
-      dependencies = {
-        'nvim-lua/plenary.nvim',
-        -- Fuzzy Finder Algorithm which requires local dependencies to be built.
-        -- Only load if `make` is available. Make sure you have the system
-        -- requirements installed.
-        {
-          'nvim-telescope/telescope-fzf-native.nvim',
-          -- NOTE: If you are having trouble with this installation,
-          --       refer to the README for telescope-fzf-native for more instructions.
-          build = 'make',
-          cond = function()
-            return vim.fn.executable 'make' == 1
-          end,
-        },
-      },
-    },
-
-    {
-      -- Highlight, edit, and navigate code
-      'nvim-treesitter/nvim-treesitter',
-      dependencies = {
-        'nvim-treesitter/nvim-treesitter-textobjects',
-      },
-      build = ':TSUpdate',
-    },
-
-
-    -- barbar line
-    {
-      'romgrk/barbar.nvim',
-      dependencies = {
-        'lewis6991/gitsigns.nvim',     -- OPTIONAL: for git status
-        'nvim-tree/nvim-web-devicons', -- OPTIONAL: for file icons
-        'lewis6991/gitsigns.nvim',
-        'nvim-tree/nvim-web-devicons',
-      },
-      init = function() vim.g.barbar_auto_setup = false end,
-      opts = {
-        -- lazy.nvim will automatically call setup for you. put your options here, anything missing will use the default:
-        -- animation = true,
-        -- insert_at_start = true,
-        -- …etc.
-      },
-      version = '^1.0.0', -- optional: only update when a new 1.x version is released
-    },
-    -- NOTE: Next Step on Your Neovim Journey: Add/Configure additional "plugins" for kickstart
-    --       These are some example plugins that I've included in the kickstart repository.
-    --       Uncomment any of the lines below to enable them.
-    --require 'kickstart.plugins.autoformat',
-    --require 'kickstart.plugins.debug',
-
-    -- NOTE: The import below can automatically add your own plugins, configuration, etc from `lua/custom/plugins/*.lua`
-    --    You can use this folder to prevent any conflicts with this init.lua if you're interested in keeping
-    --    up-to-date with whatever is in the kickstart repo.
-    --    Uncomment the following line and add your plugins to `lua/custom/plugins/*.lua` to get going.
-    --
-    --    For additional information see: https://github.com/folke/lazy.nvim#-structuring-your-plugins
-    -- { import = 'custom.plugins' },
   },
-  {}
-})
+
+  {
+    -- Highlight, edit, and navigate code
+    'nvim-treesitter/nvim-treesitter',
+    dependencies = {
+      'nvim-treesitter/nvim-treesitter-textobjects',
+    },
+    build = ':TSUpdate',
+  },
+
+  -- dap debugger
+  'mfussenegger/nvim-dap',
+  'rcarriga/nvim-dap-ui',
+
+  -- barbar line
+  {'romgrk/barbar.nvim',
+    dependencies = {
+      'lewis6991/gitsigns.nvim', -- OPTIONAL: for git status
+      'nvim-tree/nvim-web-devicons', -- OPTIONAL: for file icons
+      'lewis6991/gitsigns.nvim',
+      'nvim-tree/nvim-web-devicons',
+    },
+    init = function() vim.g.barbar_auto_setup = false end,
+    opts = {
+      -- lazy.nvim will automatically call setup for you. put your options here, anything missing will use the default:
+      -- animation = true,
+      -- insert_at_start = true,
+      -- …etc.
+    },
+    version = '^1.0.0', -- optional: only update when a new 1.x version is released
+  },
+  -- NOTE: Next Step on Your Neovim Journey: Add/Configure additional "plugins" for kickstart
+  --       These are some example plugins that I've included in the kickstart repository.
+  --       Uncomment any of the lines below to enable them.
+  -- require 'kickstart.plugins.autoformat',
+  -- require 'kickstart.plugins.debug',
+
+  -- NOTE: The import below can automatically add your own plugins, configuration, etc from `lua/custom/plugins/*.lua`
+  --    You can use this folder to prevent any conflicts with this init.lua if you're interested in keeping
+  --    up-to-date with whatever is in the kickstart repo.
+  --    Uncomment the following line and add your plugins to `lua/custom/plugins/*.lua` to get going.
+  --
+  --    For additional information see: https://github.com/folke/lazy.nvim#-structuring-your-plugins
+  -- { import = 'custom.plugins' },
+}, {})
 
 -- [[ Setting options ]]
 -- See `:help vim.o`
 -- NOTE: You can change these options as you wish!
 
 -- Set highlight on search
-vim.o.hlsearch = true
+vim.o.hlsearch = false
 
 -- Make line numbers default
 vim.wo.number = true
@@ -537,7 +349,7 @@ require('nvim-treesitter.configs').setup {
   ensure_installed = { 'c', 'cpp', 'go', 'lua', 'python', 'rust', 'tsx', 'javascript', 'typescript', 'vimdoc', 'vim' },
 
   -- Autoinstall languages that are not installed. Defaults to false (but you can change for yourself!)
-  auto_install = true,
+  auto_install = false,
 
   highlight = { enable = true },
   indent = { enable = true },
@@ -695,65 +507,6 @@ mason_lspconfig.setup_handlers {
     }
   end
 }
--- Tab setting
-vim.o.tabstop = 4      -- A TAB character looks like 4 spaces
-vim.o.expandtab = true -- Pressing the TAB key will insert spaces instead of a TAB character
-vim.o.softtabstop = 4  -- Number of spaces inserted instead of a TAB character
-vim.o.shiftwidth = 4   -- Number of spaces inserted when indenting
-
-
-
-
-
--- Barbar keymap
-
-local map = vim.api.nvim_set_keymap
-local opts = { noremap = true, silent = true }
-
--- Move to previous/next
-map('n', '<A-,>', '<Cmd>BufferPrevious<CR>', opts)
-map('n', '<A-.>', '<Cmd>BufferNext<CR>', opts)
--- Re-order to previous/next
-map('n', '<A-<>', '<Cmd>BufferMovePrevious<CR>', opts)
-map('n', '<A->>', '<Cmd>BufferMoveNext<CR>', opts)
--- Goto buffer in position...
-map('n', '<A-1>', '<Cmd>BufferGoto 1<CR>', opts)
-map('n', '<A-2>', '<Cmd>BufferGoto 2<CR>', opts)
-map('n', '<A-3>', '<Cmd>BufferGoto 3<CR>', opts)
-map('n', '<A-4>', '<Cmd>BufferGoto 4<CR>', opts)
-map('n', '<A-5>', '<Cmd>BufferGoto 5<CR>', opts)
-map('n', '<A-6>', '<Cmd>BufferGoto 6<CR>', opts)
-map('n', '<A-7>', '<Cmd>BufferGoto 7<CR>', opts)
-map('n', '<A-8>', '<Cmd>BufferGoto 8<CR>', opts)
-map('n', '<A-9>', '<Cmd>BufferGoto 9<CR>', opts)
-map('n', '<A-0>', '<Cmd>BufferLast<CR>', opts)
--- Pin/unpin buffer
-map('n', '<A-p>', '<Cmd>BufferPin<CR>', opts)
--- Close buffer
-map('n', '<A-c>', '<Cmd>BufferClose<CR>', opts)
--- Open new tab
-map('n', '<A-=>', '<Cmd>tabnew<CR>', opts)
--- Wipeout buffer
---                 :BufferWipeout
--- Close commands
---                 :BufferCloseAllButCurrent
---                 :BufferCloseAllButPinned
---                 :BufferCloseAllButCurrentOrPinned
---                 :BufferCloseBuffersLeft
---                 :BufferCloseBuffersRight
--- Magic buffer-picking mode
-map('n', '<C-p>', '<Cmd>BufferPick<CR>', opts)
--- Sort automatically by...
-map('n', '<Space>bb', '<Cmd>BufferOrderByBufferNumber<CR>', opts)
-map('n', '<Space>bd', '<Cmd>BufferOrderByDirectory<CR>', opts)
-map('n', '<Space>bl', '<Cmd>BufferOrderByLanguage<CR>', opts)
-map('n', '<Space>bw', '<Cmd>BufferOrderByWindowNumber<CR>', opts)
-
--- Other:
--- :BarbarEnable - enables barbar (enabled by default)
--- :BarbarDisable - very bad command, should never be used
-
-
 
 -- [[ Configure nvim-cmp ]]
 -- See `:help cmp`
