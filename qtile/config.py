@@ -208,7 +208,7 @@ group_labels = ["1 ", "2 ", "3 ", "4 ", "5 ", "6 ", "7 ", "8 ", "9 ", "0",]
 group_layouts = [
     "monadtall",
     "monadtall",
-    "monadtall",
+    "monadwide",
     "monadtall",
     "monadtall",
     "monadtall",

@@ -1,5 +1,4 @@
 --[[
-
 =====================================================================
 ==================== READ THIS BEFORE CONTINUING ====================
 =====================================================================
@@ -62,6 +61,8 @@ vim.opt.rtp:prepend(lazypath)
 --  You can also configure plugins after the setup call,
 --    as they will be available in your neovim runtime.
 require('lazy').setup({
+  
+
   -- Git related plugins
   'tpope/vim-fugitive',
   'tpope/vim-rhubarb',
@@ -113,7 +114,6 @@ require('lazy').setup({
         ["<leader>d"] = { name = "+debug" }, }
     },
     {
-      -- Adds git related signs to the gutter, as well as utilities for managing changes
       'lewis6991/gitsigns.nvim',
       opts = {
         -- See `:help gitsigns.txt`
@@ -160,7 +160,7 @@ require('lazy').setup({
           opts = {},
           config = function(_, opts)
             -- setup dap config by VsCode launch.json file
-            -- require("dap.ext.vscode").load_launchjs()
+            require("dap.ext.vscode").load_launchjs()
             local dap = require("dap")
             local dapui = require("dapui")
             dapui.setup(opts)
@@ -208,7 +208,7 @@ require('lazy').setup({
             handlers = {},
 
             -- You'll need to check that you have the required things installed
-            -- online, please don't ask me how to install them :)
+            -- online, please on't ask me how to install them :)
             ensure_installed = {
               -- Update this to ensure that you have the debuggers for the langs you want
             },
@@ -318,16 +318,16 @@ require('lazy').setup({
       },
 
       config = function()
-        local Config = require("lazyvim.config")
+        -- local Config = require("lazyvim.config")
         vim.api.nvim_set_hl(0, "DapStoppedLine", { default = true, link = "Visual" })
 
-        for name, sign in pairs(Config.icons.dap) do
-          sign = type(sign) == "table" and sign or { sign }
-          vim.fn.sign_define(
-            "Dap" .. name,
-            { text = sign[1], texthl = sign[2] or "DiagnosticInfo", linehl = sign[3], numhl = sign[3] }
-          )
-        end
+        -- for name, sign in pairs(Config.icons.dap) do
+          -- sign = type(sign) == "table" and sign or { sign }
+          -- vim.fn.sign_define(
+            -- "Dap" .. name,
+            -- { text = sign[1], texthl = sign[2] or "DiagnosticInfo", linehl = sign[3], numhl = sign[3] }
+          -- )
+        -- end
       end,
     },
     -- End DAP
@@ -359,9 +359,10 @@ require('lazy').setup({
       'lukas-reineke/indent-blankline.nvim',
       -- Enable `lukas-reineke/indent-blankline.nvim`
       -- See `:help indent_blankline.txt`
+      main = 'ibl',
       opts = {
-        char = '┊',
-        show_trailing_blankline_indent = false,
+        -- char = '┊',
+        -- show_trailing_blankline_indent = false,
       },
     },
     -- "gc" to comment visual regions/lines
