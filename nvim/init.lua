@@ -160,7 +160,7 @@ require('lazy').setup({
           opts = {},
           config = function(_, opts)
             -- setup dap config by VsCode launch.json file
-            require("dap.ext.vscode").load_launchjs()
+            require("dap.ext.vscode").load_launchjs(nil)
             local dap = require("dap")
             local dapui = require("dapui")
             dapui.setup(opts)
@@ -173,6 +173,8 @@ require('lazy').setup({
             dap.listeners.before.event_exited["dapui_config"] = function()
               dapui.close({})
             end
+            dap.adapters.cs = {
+            }
           end,
         },
 
