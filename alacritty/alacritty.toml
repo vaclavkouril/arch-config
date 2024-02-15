@@ -909,4 +909,8 @@
 
   # Highlight window damage information.
   #highlight_damage: false
-- { key: N, mods: Control|Shift, command: { program: "/bin/bash", args: ["-c", "/usr/local/bin/spawn-alacritty-cwd"] }
+
+[keyboard]
+bindings = [
+   { key = "Return", mods = "Control|Shift", action = "SpawnNewInstance" }
+]

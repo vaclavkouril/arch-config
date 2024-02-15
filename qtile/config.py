@@ -169,6 +169,9 @@ keys = [
     # TOGGLE FLOATING LAYOUT
     Key([mod, "shift"], "space", lazy.window.toggle_floating()),
 
+    # CHANGE MONITOR
+    Key([mod, "shift", "control"], "space", lazy.next_screen(), desc='Next monitor'),
+
 ]
 
 
@@ -206,8 +209,8 @@ group_labels = ["1 ", "2 ", "3 ", "4 ", "5 ", "6 ", "7 ", "8 ", "9 ", "0",]
 # group_labels=["", "", "", "", "", "", "", "", "", "",]
 
 group_layouts = [
-    "monadtall",
-    "monadtall",
+    "bsp",
+    "bsp",
     "monadwide",
     "monadtall",
     "monadtall",
@@ -270,7 +273,7 @@ layouts=[
     # layout.MonadWide(**layout_theme),
     # layout.Stack(num_stacks=2),
     layout.Matrix(**layout_theme),
-    # layout.Bsp(**layout_theme),
+    layout.Bsp(**layout_theme),
     # layout.Floating(**layout_theme),
     # layout.RatioTile(**layout_theme),
     layout.Max(**layout_theme)
