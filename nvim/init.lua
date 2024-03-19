@@ -61,8 +61,6 @@ vim.opt.rtp:prepend(lazypath)
 --  You can also configure plugins after the setup call,
 --    as they will be available in your neovim runtime.
 require('lazy').setup({
-  
-
   -- Git related plugins
   'tpope/vim-fugitive',
   'tpope/vim-rhubarb',
@@ -673,7 +671,11 @@ local servers = {
     },
   },
 }
-
+vim.filetype.add({
+    extension = {
+        pl = "prolog",
+    },
+})
 -- Setup neovim lua configuration
 require('neodev').setup()
 
@@ -805,6 +807,9 @@ cmp.setup {
     { name = 'luasnip' },
   },
 }
+
+require('lspconfig/prolog_lsp')
+require('lspconfig').prolog_lsp.setup{}
 
 -- The line beneath this is called `modeline`. See `:help modeline`
 -- vim: ts=2 sts=2 sw=2 et
