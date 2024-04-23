@@ -232,10 +232,10 @@ keys.extend([
 
 groups = []
 
-group_names = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "0",]
+group_names = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "0"]
 
-group_labels = ["1 ", "2 ", "3 ", "4 ", "5 ", "6 ", "7 ", "8 ", "9 ", "0",]
-# group_labels=["", "", "", "", "", "", "", "", "", "",]
+group_labels = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "0"]
+# group_labels = ["", "", "", "", "", "", "", "", "", "",]
 
 group_layouts = [
     "bsp",
@@ -340,7 +340,7 @@ def power():
 
 def init_widgets_defaults():
     return dict(font="Noto Sans",
-                fontsize=12,
+                fontsize=8,
                 padding=2,
                 background=colors[1])
 
@@ -352,7 +352,7 @@ def init_widgets_list():
     # prompt = "{0}@{1}: ".format(os.environ["USER"], socket.gethostname())
     widgets_list = [
         widget.Spacer(
-            length=15,
+            length=4,
             background=colors[1],
             ),
 

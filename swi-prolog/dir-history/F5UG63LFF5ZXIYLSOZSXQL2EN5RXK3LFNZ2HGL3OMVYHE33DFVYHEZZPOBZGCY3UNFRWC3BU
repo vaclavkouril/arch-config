@@ -1,0 +1,17 @@
+_HiStOrY_V2_
+gtrace.
+solve([a,b,c],\040X).
+length(P,4),\040solve([a,b,c],\040X).
+nodebug.
+length(X,4),\040solve([a,b,c],\040X).
+length(X,6),\040solve([a,b,c],\040X).
+length(X,5),\040solve([a,b,c],\040X).
+make.
+fold(+,\040[1,2,3,4],\040[],\040R).
+fold((+),\040[1,2,3,4],\040[],\040R).
+fold(plus,\040[1,2,3,4],\040[],\040R).
+fold(plus,\040[1,2,3,4],0\040,\040R).
+foldr(plus,\040[1,2,3,4],0\040,\040R).
+foldr(plus,\040[1,2,3,4],Z\040,\040R).
+foldr(+,\040[1,2,3,4],0\040,\040R).
+make.
