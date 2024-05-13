@@ -1,100 +1,100 @@
-b
-let (a:b:c) = [1,2,3,4,5,6]
-:l lists_and_strings.hs 
-capitalize "  spring  is  near  "
-capitalize "zanzibar"
-break (== ' ') "Z a Z"
-:w
-:l lists_and_strings.hs 
-:l lists_and_strings.hs 
-:l lists_and_strings.hs 
-capitalize "zanzibar"
-capitalize "  spring  is  near  "
-:l lists_and_strings.hs 
-capitalize "  spring  is  near  "
-:l lists_and_strings.hs 
-capitalize "  spring  is  near  "
-:l lists_and_strings.hs 
-capitalize "  spring  is  near  "
-capitalize "  spring  is  near  "
-:l lists_and_strings.hs 
-:l lists_and_strings.hs 
-:l lists_and_strings.hs 
-:l lists_and_strings.hs 
-:l lists_and_strings.hs 
-capitalizeWord "Abbbv"
-capitalizeWord "abbbv"
-:l lists_and_strings.hs 
-let (x,y:xs) = "abbbc"
-xs
-x
-let (x:xs) = "abbbc"
-insertion_sort ([20, 18 .. 0] ++ [30, 28 .. 10])
-:l lists_and_strings.hs 
-insert 7 [2, 4 .. 10]
-insert 8 [2, 4 .. 10]
-:l lists_and_strings.hs 
-:l lists_and_strings.hs 
-squareRoot (10^100 + 789)
-:l integers.hs
-:l integers.hs
-:l integers.hs
-squareRoot (10^100 + 789)
-squareRoot (10^100 + 789)
-squareRoot (1^100 + 789)
-squareRoot 121
-squareRoot 70
-:l integers.hs
-:l integers.hs
-:l integers.hs
-take 15 squareFree 
-:l integers.hs
-:l integers.hs
-:l integers.hs
-:l integers.hs
-factors 15
-factorize 15
+mapM_ print (allBalanced 5)
+mapM_ print (allBalanced 6)
+allBalanced 4
+allBalanced 3
+allBalanced 2
+allBalanced 1
+:l test.hs 
+:l test.hs 
 :q
-factorize 1
-factorize 15
-factorize 15
-take 15 factorize n
-factors 5
-factors 4
-factors 3
-factors 2
-factors 1
-factors (2^50 + 1)
-factors (2^30 + 1)
+mapM_ print (allBalanced 4)
+allBalanced 3
+:l all_balanced_binary_tree.hs 
+allBalanced 3
+:l all_balanced_binary_tree.hs 
+allBalanced 3
+:l all_balanced_binary_tree.hs 
+allBalanced 3
+allBalanced 2
+mapM_ print (allBalanced 4)
+:l all_balanced_binary_tree.hs 
+:l all_balanced_binary_tree.hs 
+mapM_ print (allBalanced 4)
+        # TODO: validate if all are in the bounds
+allBalanced 3
+allBalanced 5
 :q
-load "integers.hs"
-factors (2^50 + 1)
-factors (2^30 + 1)
-factors 36
-factors 32
+allBalanced 5
+:l all_balanced_binary_tree.hs 
+allBalanced 2
+allBalanced 3
+mapM_ print (allBalanced 4)
+:l test.hs 
+allBalanced 3
+mapM_ print (allBalanced 4)
+allBalanced 3
+:l test.hs 
+allBalanced 2
+:l test.hs 
+:l test.hs 
+:l test.hs 
+:l test.hs 
+:l test.hs 
+allBalanced 2
+allBalanced 1
+allBalanced 0
+:l test.hs 
+:l all_balanced_binary_tree.hs 
+:l all_balanced_binary_tree.hs 
 :q
-load "integers.hs"
-load "integers.hs"
-load "integers.hs"
-secondLast [1]
-:l Documents/neproc-prg/haskell-cvika/cv1.hs 
-:l Documents/neproc-prg/haskell-cvika/cv1.hs 
-:l Documents/neproc-prg/haskell-cvika/cv1.hs 
-secondLast [1]
-secondLast [1]
-secondLast [a]
-:l Documents/neproc-prg/haskell-cvika/cv1.hs 
--}
-:l Documents/neproc-prg/haskell-cvika/cv1.hs 
-:l Documents/neproc-prg/haskell-cvika/cv1.hs 
-secondLast []
-secondLast [0,1,2,3]
-secondLast x = last (init x)
-secondLast [0,1,2,3]
-secondLast [x] = error "only one element present"
-secondLast [] = error "list is empty"
-secondLast [0,1,2,3]
-secondLast x = last (init x)
-(6,)
-(6,7)
-(6,)
+distinct_sum 10000 2
+distinct_sum 1000000000 2
+distinct_sum 4000 2
+distinct_sum 100 3
+distinct_sum 10000 3
+distinct_sum 1000 2
+:q
+distinct_sum 100 2
+distinct_sum 4000 3
+distinct_sum 500 2
+:l ramanujam.hs 
+exit
+exit
+distinct_sum 500 2
+distinct_sum 4000 3
+:l ramanujam.hs 
+:l ramanujam.hs 
+distinct_sum 4000 3
+:l ramanujam.hs 
+distinct_sum 400 3
+distinct_sum 500 2
+:l ramanujam.hs 
+distinct_sum 500 2
+distinct_sum 5 3
+:l ramanujam.hs 
+distinct_sum 5 3
+distinct_sum 500 2
+:l ramanujam.hs 
+:l ramanujam.hs 
+:l ramanujam.hs 
+:l ramanujam.hs 
+:l ramanujam.hs 
+:l ramanujam.hs 
+distinct_sum 500 2
+:l ramanujam.hs 
+distinct_sum 500 2
+:l ramanujam.hs 
+:l ramanujam.hs 
+:l ramanujam.hs 
+distinct_sum 500 2
+:l ramanujam.hs 
+distinct_sum 500 2
+:l ramanujam.hs 
+distinct_sum 500 2
+:l ramanujam.hs 
+:l ramanujam.hs 
+:l ramanujam.hs 
+distinct_sum 500 2
+:l ramanujam.hs 
+distinct_sum 500 2
+:l ramanujam.hs 

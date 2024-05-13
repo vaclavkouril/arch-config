@@ -2407,16 +2407,19 @@
   <resource identifier="InconsolataGo Nerd Font Propo Bold" checksum="(null)">
   </resource>
 
+  <resource identifier="Inconsolata LGC Nerd Font" checksum="(null)">
+  </resource>
+
   <resource identifier="Inconsolata LGC Nerd Font Bold" checksum="(null)">
   </resource>
 
   <resource identifier="Inconsolata LGC Nerd Font Bold Italic" checksum="(null)">
   </resource>
 
-  <resource identifier="Inconsolata LGC Nerd Font Medium" checksum="(null)">
+  <resource identifier="Inconsolata LGC Nerd Font Italic" checksum="(null)">
   </resource>
 
-  <resource identifier="Inconsolata LGC Nerd Font Medium Italic" checksum="(null)">
+  <resource identifier="Inconsolata LGC Nerd Font Mono" checksum="(null)">
   </resource>
 
   <resource identifier="Inconsolata LGC Nerd Font Mono Bold" checksum="(null)">
@@ -2425,10 +2428,10 @@
   <resource identifier="Inconsolata LGC Nerd Font Mono Bold Italic" checksum="(null)">
   </resource>
 
-  <resource identifier="Inconsolata LGC Nerd Font Mono Medium" checksum="(null)">
+  <resource identifier="Inconsolata LGC Nerd Font Mono Italic" checksum="(null)">
   </resource>
 
-  <resource identifier="Inconsolata LGC Nerd Font Mono Medium Italic" checksum="(null)">
+  <resource identifier="Inconsolata LGC Nerd Font Propo" checksum="(null)">
   </resource>
 
   <resource identifier="Inconsolata LGC Nerd Font Propo Bold" checksum="(null)">
@@ -2437,10 +2440,7 @@
   <resource identifier="Inconsolata LGC Nerd Font Propo Bold Italic" checksum="(null)">
   </resource>
 
-  <resource identifier="Inconsolata LGC Nerd Font Propo Medium" checksum="(null)">
-  </resource>
-
-  <resource identifier="Inconsolata LGC Nerd Font Propo Medium Italic" checksum="(null)">
+  <resource identifier="Inconsolata LGC Nerd Font Propo Italic" checksum="(null)">
   </resource>
 
   <resource identifier="Inconsolata Nerd Font" checksum="(null)">
@@ -3262,15 +3262,6 @@
   <resource identifier="Lekton Nerd Font Propo Italic" checksum="(null)">
   </resource>
 
-  <resource identifier="LilexExtraThick Nerd Font Mono weight=450" checksum="(null)">
-  </resource>
-
-  <resource identifier="LilexExtraThick Nerd Font Propo weight=450" checksum="(null)">
-  </resource>
-
-  <resource identifier="LilexExtraThick Nerd Font weight=450" checksum="(null)">
-  </resource>
-
   <resource identifier="Lilex Nerd Font" checksum="(null)">
   </resource>
 
@@ -3295,6 +3286,9 @@
   <resource identifier="Lilex Nerd Font Mono Ultra-Light" checksum="(null)">
   </resource>
 
+  <resource identifier="Lilex Nerd Font Mono weight=450" checksum="(null)">
+  </resource>
+
   <resource identifier="Lilex Nerd Font Propo" checksum="(null)">
   </resource>
 
@@ -3310,10 +3304,16 @@
   <resource identifier="Lilex Nerd Font Propo Ultra-Light" checksum="(null)">
   </resource>
 
+  <resource identifier="Lilex Nerd Font Propo weight=450" checksum="(null)">
+  </resource>
+
   <resource identifier="Lilex Nerd Font Thin" checksum="(null)">
   </resource>
 
   <resource identifier="Lilex Nerd Font Ultra-Light" checksum="(null)">
+  </resource>
+
+  <resource identifier="Lilex Nerd Font weight=450" checksum="(null)">
   </resource>
 
   <resource identifier="LiterationMono Nerd Font" checksum="(null)">
@@ -3695,132 +3695,6 @@
   </resource>
 
   <resource identifier="M+CodeLat60 Nerd Font Ultra-Light Expanded" checksum="(null)">
-  </resource>
-
-  <resource identifier="M+CodeLat Nerd Font" checksum="(null)">
-  </resource>
-
-  <resource identifier="M+CodeLat Nerd Font Bold" checksum="(null)">
-  </resource>
-
-  <resource identifier="M+CodeLat Nerd Font Light" checksum="(null)">
-  </resource>
-
-  <resource identifier="M+CodeLat Nerd Font Medium" checksum="(null)">
-  </resource>
-
-  <resource identifier="M+CodeLat Nerd Font Mono" checksum="(null)">
-  </resource>
-
-  <resource identifier="M+CodeLat Nerd Font Mono Bold" checksum="(null)">
-  </resource>
-
-  <resource identifier="M+CodeLat Nerd Font Mono Light" checksum="(null)">
-  </resource>
-
-  <resource identifier="M+CodeLat Nerd Font Mono Medium" checksum="(null)">
-  </resource>
-
-  <resource identifier="M+CodeLat Nerd Font Mono Semi-Bold" checksum="(null)">
-  </resource>
-
-  <resource identifier="M+CodeLat Nerd Font Mono weight=250" checksum="(null)">
-  </resource>
-
-  <resource identifier="M+CodeLat Nerd Font Mono weight=250" checksum="(null)">
-  </resource>
-
-  <resource identifier="M+CodeLat Nerd Font Propo" checksum="(null)">
-  </resource>
-
-  <resource identifier="M+CodeLat Nerd Font Propo Bold" checksum="(null)">
-  </resource>
-
-  <resource identifier="M+CodeLat Nerd Font Propo Light" checksum="(null)">
-  </resource>
-
-  <resource identifier="M+CodeLat Nerd Font Propo Medium" checksum="(null)">
-  </resource>
-
-  <resource identifier="M+CodeLat Nerd Font Propo Semi-Bold" checksum="(null)">
-  </resource>
-
-  <resource identifier="M+CodeLat Nerd Font Propo weight=250" checksum="(null)">
-  </resource>
-
-  <resource identifier="M+CodeLat Nerd Font Propo weight=250" checksum="(null)">
-  </resource>
-
-  <resource identifier="M+CodeLat Nerd Font Semi-Bold" checksum="(null)">
-  </resource>
-
-  <resource identifier="M+CodeLat Nerd Font weight=250" checksum="(null)">
-  </resource>
-
-  <resource identifier="M+CodeLat Nerd Font weight=250" checksum="(null)">
-  </resource>
-
-  <resource identifier="M+CodeLatX Nerd Font Bold Expanded" checksum="(null)">
-  </resource>
-
-  <resource identifier="M+CodeLatX Nerd Font Expanded" checksum="(null)">
-  </resource>
-
-  <resource identifier="M+CodeLatX Nerd Font Light Expanded" checksum="(null)">
-  </resource>
-
-  <resource identifier="M+CodeLatX Nerd Font Medium Expanded" checksum="(null)">
-  </resource>
-
-  <resource identifier="M+CodeLatX Nerd Font Mono Bold Expanded" checksum="(null)">
-  </resource>
-
-  <resource identifier="M+CodeLatX Nerd Font Mono Expanded" checksum="(null)">
-  </resource>
-
-  <resource identifier="M+CodeLatX Nerd Font Mono Light Expanded" checksum="(null)">
-  </resource>
-
-  <resource identifier="M+CodeLatX Nerd Font Mono Medium Expanded" checksum="(null)">
-  </resource>
-
-  <resource identifier="M+CodeLatX Nerd Font Mono Semi-Bold Expanded" checksum="(null)">
-  </resource>
-
-  <resource identifier="M+CodeLatX Nerd Font Mono weight=250 Expanded" checksum="(null)">
-  </resource>
-
-  <resource identifier="M+CodeLatX Nerd Font Mono weight=250 Expanded" checksum="(null)">
-  </resource>
-
-  <resource identifier="M+CodeLatX Nerd Font Propo Bold Expanded" checksum="(null)">
-  </resource>
-
-  <resource identifier="M+CodeLatX Nerd Font Propo Expanded" checksum="(null)">
-  </resource>
-
-  <resource identifier="M+CodeLatX Nerd Font Propo Light Expanded" checksum="(null)">
-  </resource>
-
-  <resource identifier="M+CodeLatX Nerd Font Propo Medium Expanded" checksum="(null)">
-  </resource>
-
-  <resource identifier="M+CodeLatX Nerd Font Propo Semi-Bold Expanded" checksum="(null)">
-  </resource>
-
-  <resource identifier="M+CodeLatX Nerd Font Propo weight=250 Expanded" checksum="(null)">
-  </resource>
-
-  <resource identifier="M+CodeLatX Nerd Font Propo weight=250 Expanded" checksum="(null)">
-  </resource>
-
-  <resource identifier="M+CodeLatX Nerd Font Semi-Bold Expanded" checksum="(null)">
-  </resource>
-
-  <resource identifier="M+CodeLatX Nerd Font weight=250 Expanded" checksum="(null)">
-  </resource>
-
-  <resource identifier="M+CodeLatX Nerd Font weight=250 Expanded" checksum="(null)">
   </resource>
 
   <resource identifier="MesloLGLDZ Nerd Font" checksum="(null)">
@@ -4336,18 +4210,6 @@
   <resource identifier="NotoSansM Nerd Font Mono Semi-Condensed" checksum="(null)">
   </resource>
 
-  <resource identifier="NotoSansM Nerd Font Mono Thin" checksum="(null)">
-  </resource>
-
-  <resource identifier="NotoSansM Nerd Font Mono Thin Condensed" checksum="(null)">
-  </resource>
-
-  <resource identifier="NotoSansM Nerd Font Mono Thin Extra-Condensed" checksum="(null)">
-  </resource>
-
-  <resource identifier="NotoSansM Nerd Font Mono Thin Semi-Condensed" checksum="(null)">
-  </resource>
-
   <resource identifier="NotoSansM Nerd Font Mono Ultra-Bold" checksum="(null)">
   </resource>
 
@@ -4360,16 +4222,28 @@
   <resource identifier="NotoSansM Nerd Font Mono Ultra-Bold Semi-Condensed" checksum="(null)">
   </resource>
 
-  <resource identifier="NotoSansM Nerd Font Mono Ultra-Light" checksum="(null)">
+  <resource identifier="NotoSansM Nerd Font Mono weight=250" checksum="(null)">
   </resource>
 
-  <resource identifier="NotoSansM Nerd Font Mono Ultra-Light Condensed" checksum="(null)">
+  <resource identifier="NotoSansM Nerd Font Mono weight=250" checksum="(null)">
   </resource>
 
-  <resource identifier="NotoSansM Nerd Font Mono Ultra-Light Extra-Condensed" checksum="(null)">
+  <resource identifier="NotoSansM Nerd Font Mono weight=250 Condensed" checksum="(null)">
   </resource>
 
-  <resource identifier="NotoSansM Nerd Font Mono Ultra-Light Semi-Condensed" checksum="(null)">
+  <resource identifier="NotoSansM Nerd Font Mono weight=250 Condensed" checksum="(null)">
+  </resource>
+
+  <resource identifier="NotoSansM Nerd Font Mono weight=250 Extra-Condensed" checksum="(null)">
+  </resource>
+
+  <resource identifier="NotoSansM Nerd Font Mono weight=250 Extra-Condensed" checksum="(null)">
+  </resource>
+
+  <resource identifier="NotoSansM Nerd Font Mono weight=250 Semi-Condensed" checksum="(null)">
+  </resource>
+
+  <resource identifier="NotoSansM Nerd Font Mono weight=250 Semi-Condensed" checksum="(null)">
   </resource>
 
   <resource identifier="NotoSansM Nerd Font Propo" checksum="(null)">
@@ -4444,18 +4318,6 @@
   <resource identifier="NotoSansM Nerd Font Propo Semi-Condensed" checksum="(null)">
   </resource>
 
-  <resource identifier="NotoSansM Nerd Font Propo Thin" checksum="(null)">
-  </resource>
-
-  <resource identifier="NotoSansM Nerd Font Propo Thin Condensed" checksum="(null)">
-  </resource>
-
-  <resource identifier="NotoSansM Nerd Font Propo Thin Extra-Condensed" checksum="(null)">
-  </resource>
-
-  <resource identifier="NotoSansM Nerd Font Propo Thin Semi-Condensed" checksum="(null)">
-  </resource>
-
   <resource identifier="NotoSansM Nerd Font Propo Ultra-Bold" checksum="(null)">
   </resource>
 
@@ -4468,16 +4330,28 @@
   <resource identifier="NotoSansM Nerd Font Propo Ultra-Bold Semi-Condensed" checksum="(null)">
   </resource>
 
-  <resource identifier="NotoSansM Nerd Font Propo Ultra-Light" checksum="(null)">
+  <resource identifier="NotoSansM Nerd Font Propo weight=250" checksum="(null)">
   </resource>
 
-  <resource identifier="NotoSansM Nerd Font Propo Ultra-Light Condensed" checksum="(null)">
+  <resource identifier="NotoSansM Nerd Font Propo weight=250" checksum="(null)">
   </resource>
 
-  <resource identifier="NotoSansM Nerd Font Propo Ultra-Light Extra-Condensed" checksum="(null)">
+  <resource identifier="NotoSansM Nerd Font Propo weight=250 Condensed" checksum="(null)">
   </resource>
 
-  <resource identifier="NotoSansM Nerd Font Propo Ultra-Light Semi-Condensed" checksum="(null)">
+  <resource identifier="NotoSansM Nerd Font Propo weight=250 Condensed" checksum="(null)">
+  </resource>
+
+  <resource identifier="NotoSansM Nerd Font Propo weight=250 Extra-Condensed" checksum="(null)">
+  </resource>
+
+  <resource identifier="NotoSansM Nerd Font Propo weight=250 Extra-Condensed" checksum="(null)">
+  </resource>
+
+  <resource identifier="NotoSansM Nerd Font Propo weight=250 Semi-Condensed" checksum="(null)">
+  </resource>
+
+  <resource identifier="NotoSansM Nerd Font Propo weight=250 Semi-Condensed" checksum="(null)">
   </resource>
 
   <resource identifier="NotoSansM Nerd Font Semi-Bold" checksum="(null)">
@@ -4495,18 +4369,6 @@
   <resource identifier="NotoSansM Nerd Font Semi-Condensed" checksum="(null)">
   </resource>
 
-  <resource identifier="NotoSansM Nerd Font Thin" checksum="(null)">
-  </resource>
-
-  <resource identifier="NotoSansM Nerd Font Thin Condensed" checksum="(null)">
-  </resource>
-
-  <resource identifier="NotoSansM Nerd Font Thin Extra-Condensed" checksum="(null)">
-  </resource>
-
-  <resource identifier="NotoSansM Nerd Font Thin Semi-Condensed" checksum="(null)">
-  </resource>
-
   <resource identifier="NotoSansM Nerd Font Ultra-Bold" checksum="(null)">
   </resource>
 
@@ -4519,25 +4381,43 @@
   <resource identifier="NotoSansM Nerd Font Ultra-Bold Semi-Condensed" checksum="(null)">
   </resource>
 
-  <resource identifier="NotoSansM Nerd Font Ultra-Light" checksum="(null)">
+  <resource identifier="NotoSansM Nerd Font weight=250" checksum="(null)">
   </resource>
 
-  <resource identifier="NotoSansM Nerd Font Ultra-Light Condensed" checksum="(null)">
+  <resource identifier="NotoSansM Nerd Font weight=250" checksum="(null)">
   </resource>
 
-  <resource identifier="NotoSansM Nerd Font Ultra-Light Extra-Condensed" checksum="(null)">
+  <resource identifier="NotoSansM Nerd Font weight=250 Condensed" checksum="(null)">
   </resource>
 
-  <resource identifier="NotoSansM Nerd Font Ultra-Light Semi-Condensed" checksum="(null)">
+  <resource identifier="NotoSansM Nerd Font weight=250 Condensed" checksum="(null)">
+  </resource>
+
+  <resource identifier="NotoSansM Nerd Font weight=250 Extra-Condensed" checksum="(null)">
+  </resource>
+
+  <resource identifier="NotoSansM Nerd Font weight=250 Extra-Condensed" checksum="(null)">
+  </resource>
+
+  <resource identifier="NotoSansM Nerd Font weight=250 Semi-Condensed" checksum="(null)">
+  </resource>
+
+  <resource identifier="NotoSansM Nerd Font weight=250 Semi-Condensed" checksum="(null)">
   </resource>
 
   <resource identifier="NotoSans Nerd Font" checksum="(null)">
+  </resource>
+
+  <resource identifier="NotoSans Nerd Font Bold" checksum="(null)">
   </resource>
 
   <resource identifier="NotoSans Nerd Font Bold Condensed" checksum="(null)">
   </resource>
 
   <resource identifier="NotoSans Nerd Font Bold Extra-Condensed" checksum="(null)">
+  </resource>
+
+  <resource identifier="NotoSans Nerd Font Bold Italic" checksum="(null)">
   </resource>
 
   <resource identifier="NotoSans Nerd Font Bold Italic Condensed" checksum="(null)">
@@ -4558,10 +4438,16 @@
   <resource identifier="NotoSans Nerd Font Extra-Condensed" checksum="(null)">
   </resource>
 
+  <resource identifier="NotoSans Nerd Font Heavy" checksum="(null)">
+  </resource>
+
   <resource identifier="NotoSans Nerd Font Heavy Condensed" checksum="(null)">
   </resource>
 
   <resource identifier="NotoSans Nerd Font Heavy Extra-Condensed" checksum="(null)">
+  </resource>
+
+  <resource identifier="NotoSans Nerd Font Heavy Italic" checksum="(null)">
   </resource>
 
   <resource identifier="NotoSans Nerd Font Heavy Italic Condensed" checksum="(null)">
@@ -4639,10 +4525,16 @@
   <resource identifier="NotoSans Nerd Font Propo" checksum="(null)">
   </resource>
 
+  <resource identifier="NotoSans Nerd Font Propo Bold" checksum="(null)">
+  </resource>
+
   <resource identifier="NotoSans Nerd Font Propo Bold Condensed" checksum="(null)">
   </resource>
 
   <resource identifier="NotoSans Nerd Font Propo Bold Extra-Condensed" checksum="(null)">
+  </resource>
+
+  <resource identifier="NotoSans Nerd Font Propo Bold Italic" checksum="(null)">
   </resource>
 
   <resource identifier="NotoSans Nerd Font Propo Bold Italic Condensed" checksum="(null)">
@@ -4663,10 +4555,16 @@
   <resource identifier="NotoSans Nerd Font Propo Extra-Condensed" checksum="(null)">
   </resource>
 
+  <resource identifier="NotoSans Nerd Font Propo Heavy" checksum="(null)">
+  </resource>
+
   <resource identifier="NotoSans Nerd Font Propo Heavy Condensed" checksum="(null)">
   </resource>
 
   <resource identifier="NotoSans Nerd Font Propo Heavy Extra-Condensed" checksum="(null)">
+  </resource>
+
+  <resource identifier="NotoSans Nerd Font Propo Heavy Italic" checksum="(null)">
   </resource>
 
   <resource identifier="NotoSans Nerd Font Propo Heavy Italic Condensed" checksum="(null)">
@@ -4768,30 +4666,6 @@
   <resource identifier="NotoSans Nerd Font Propo Semi-Condensed" checksum="(null)">
   </resource>
 
-  <resource identifier="NotoSans Nerd Font Propo Thin" checksum="(null)">
-  </resource>
-
-  <resource identifier="NotoSans Nerd Font Propo Thin Condensed" checksum="(null)">
-  </resource>
-
-  <resource identifier="NotoSans Nerd Font Propo Thin Extra-Condensed" checksum="(null)">
-  </resource>
-
-  <resource identifier="NotoSans Nerd Font Propo Thin Italic" checksum="(null)">
-  </resource>
-
-  <resource identifier="NotoSans Nerd Font Propo Thin Italic Condensed" checksum="(null)">
-  </resource>
-
-  <resource identifier="NotoSans Nerd Font Propo Thin Italic Extra-Condensed" checksum="(null)">
-  </resource>
-
-  <resource identifier="NotoSans Nerd Font Propo Thin Italic Semi-Condensed" checksum="(null)">
-  </resource>
-
-  <resource identifier="NotoSans Nerd Font Propo Thin Semi-Condensed" checksum="(null)">
-  </resource>
-
   <resource identifier="NotoSans Nerd Font Propo Ultra-Bold" checksum="(null)">
   </resource>
 
@@ -4816,28 +4690,52 @@
   <resource identifier="NotoSans Nerd Font Propo Ultra-Bold Semi-Condensed" checksum="(null)">
   </resource>
 
-  <resource identifier="NotoSans Nerd Font Propo Ultra-Light" checksum="(null)">
+  <resource identifier="NotoSans Nerd Font Propo weight=250" checksum="(null)">
   </resource>
 
-  <resource identifier="NotoSans Nerd Font Propo Ultra-Light Condensed" checksum="(null)">
+  <resource identifier="NotoSans Nerd Font Propo weight=250" checksum="(null)">
   </resource>
 
-  <resource identifier="NotoSans Nerd Font Propo Ultra-Light Extra-Condensed" checksum="(null)">
+  <resource identifier="NotoSans Nerd Font Propo weight=250 Condensed" checksum="(null)">
   </resource>
 
-  <resource identifier="NotoSans Nerd Font Propo Ultra-Light Italic" checksum="(null)">
+  <resource identifier="NotoSans Nerd Font Propo weight=250 Condensed" checksum="(null)">
   </resource>
 
-  <resource identifier="NotoSans Nerd Font Propo Ultra-Light Italic Condensed" checksum="(null)">
+  <resource identifier="NotoSans Nerd Font Propo weight=250 Extra-Condensed" checksum="(null)">
   </resource>
 
-  <resource identifier="NotoSans Nerd Font Propo Ultra-Light Italic Extra-Condensed" checksum="(null)">
+  <resource identifier="NotoSans Nerd Font Propo weight=250 Extra-Condensed" checksum="(null)">
   </resource>
 
-  <resource identifier="NotoSans Nerd Font Propo Ultra-Light Italic Semi-Condensed" checksum="(null)">
+  <resource identifier="NotoSans Nerd Font Propo weight=250 Italic" checksum="(null)">
   </resource>
 
-  <resource identifier="NotoSans Nerd Font Propo Ultra-Light Semi-Condensed" checksum="(null)">
+  <resource identifier="NotoSans Nerd Font Propo weight=250 Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="NotoSans Nerd Font Propo weight=250 Italic Condensed" checksum="(null)">
+  </resource>
+
+  <resource identifier="NotoSans Nerd Font Propo weight=250 Italic Condensed" checksum="(null)">
+  </resource>
+
+  <resource identifier="NotoSans Nerd Font Propo weight=250 Italic Extra-Condensed" checksum="(null)">
+  </resource>
+
+  <resource identifier="NotoSans Nerd Font Propo weight=250 Italic Extra-Condensed" checksum="(null)">
+  </resource>
+
+  <resource identifier="NotoSans Nerd Font Propo weight=250 Italic Semi-Condensed" checksum="(null)">
+  </resource>
+
+  <resource identifier="NotoSans Nerd Font Propo weight=250 Italic Semi-Condensed" checksum="(null)">
+  </resource>
+
+  <resource identifier="NotoSans Nerd Font Propo weight=250 Semi-Condensed" checksum="(null)">
+  </resource>
+
+  <resource identifier="NotoSans Nerd Font Propo weight=250 Semi-Condensed" checksum="(null)">
   </resource>
 
   <resource identifier="NotoSans Nerd Font Semi-Bold" checksum="(null)">
@@ -4867,30 +4765,6 @@
   <resource identifier="NotoSans Nerd Font Semi-Condensed" checksum="(null)">
   </resource>
 
-  <resource identifier="NotoSans Nerd Font Thin" checksum="(null)">
-  </resource>
-
-  <resource identifier="NotoSans Nerd Font Thin Condensed" checksum="(null)">
-  </resource>
-
-  <resource identifier="NotoSans Nerd Font Thin Extra-Condensed" checksum="(null)">
-  </resource>
-
-  <resource identifier="NotoSans Nerd Font Thin Italic" checksum="(null)">
-  </resource>
-
-  <resource identifier="NotoSans Nerd Font Thin Italic Condensed" checksum="(null)">
-  </resource>
-
-  <resource identifier="NotoSans Nerd Font Thin Italic Extra-Condensed" checksum="(null)">
-  </resource>
-
-  <resource identifier="NotoSans Nerd Font Thin Italic Semi-Condensed" checksum="(null)">
-  </resource>
-
-  <resource identifier="NotoSans Nerd Font Thin Semi-Condensed" checksum="(null)">
-  </resource>
-
   <resource identifier="NotoSans Nerd Font Ultra-Bold" checksum="(null)">
   </resource>
 
@@ -4915,28 +4789,52 @@
   <resource identifier="NotoSans Nerd Font Ultra-Bold Semi-Condensed" checksum="(null)">
   </resource>
 
-  <resource identifier="NotoSans Nerd Font Ultra-Light" checksum="(null)">
+  <resource identifier="NotoSans Nerd Font weight=250" checksum="(null)">
   </resource>
 
-  <resource identifier="NotoSans Nerd Font Ultra-Light Condensed" checksum="(null)">
+  <resource identifier="NotoSans Nerd Font weight=250" checksum="(null)">
   </resource>
 
-  <resource identifier="NotoSans Nerd Font Ultra-Light Extra-Condensed" checksum="(null)">
+  <resource identifier="NotoSans Nerd Font weight=250 Condensed" checksum="(null)">
   </resource>
 
-  <resource identifier="NotoSans Nerd Font Ultra-Light Italic" checksum="(null)">
+  <resource identifier="NotoSans Nerd Font weight=250 Condensed" checksum="(null)">
   </resource>
 
-  <resource identifier="NotoSans Nerd Font Ultra-Light Italic Condensed" checksum="(null)">
+  <resource identifier="NotoSans Nerd Font weight=250 Extra-Condensed" checksum="(null)">
   </resource>
 
-  <resource identifier="NotoSans Nerd Font Ultra-Light Italic Extra-Condensed" checksum="(null)">
+  <resource identifier="NotoSans Nerd Font weight=250 Extra-Condensed" checksum="(null)">
   </resource>
 
-  <resource identifier="NotoSans Nerd Font Ultra-Light Italic Semi-Condensed" checksum="(null)">
+  <resource identifier="NotoSans Nerd Font weight=250 Italic" checksum="(null)">
   </resource>
 
-  <resource identifier="NotoSans Nerd Font Ultra-Light Semi-Condensed" checksum="(null)">
+  <resource identifier="NotoSans Nerd Font weight=250 Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="NotoSans Nerd Font weight=250 Italic Condensed" checksum="(null)">
+  </resource>
+
+  <resource identifier="NotoSans Nerd Font weight=250 Italic Condensed" checksum="(null)">
+  </resource>
+
+  <resource identifier="NotoSans Nerd Font weight=250 Italic Extra-Condensed" checksum="(null)">
+  </resource>
+
+  <resource identifier="NotoSans Nerd Font weight=250 Italic Extra-Condensed" checksum="(null)">
+  </resource>
+
+  <resource identifier="NotoSans Nerd Font weight=250 Italic Semi-Condensed" checksum="(null)">
+  </resource>
+
+  <resource identifier="NotoSans Nerd Font weight=250 Italic Semi-Condensed" checksum="(null)">
+  </resource>
+
+  <resource identifier="NotoSans Nerd Font weight=250 Semi-Condensed" checksum="(null)">
+  </resource>
+
+  <resource identifier="NotoSans Nerd Font weight=250 Semi-Condensed" checksum="(null)">
   </resource>
 
   <resource identifier="NotoSerif Nerd Font" checksum="(null)">
@@ -5200,30 +5098,6 @@
   <resource identifier="NotoSerif Nerd Font Propo Semi-Condensed" checksum="(null)">
   </resource>
 
-  <resource identifier="NotoSerif Nerd Font Propo Thin" checksum="(null)">
-  </resource>
-
-  <resource identifier="NotoSerif Nerd Font Propo Thin Condensed" checksum="(null)">
-  </resource>
-
-  <resource identifier="NotoSerif Nerd Font Propo Thin Extra-Condensed" checksum="(null)">
-  </resource>
-
-  <resource identifier="NotoSerif Nerd Font Propo Thin Italic" checksum="(null)">
-  </resource>
-
-  <resource identifier="NotoSerif Nerd Font Propo Thin Italic Condensed" checksum="(null)">
-  </resource>
-
-  <resource identifier="NotoSerif Nerd Font Propo Thin Italic Extra-Condensed" checksum="(null)">
-  </resource>
-
-  <resource identifier="NotoSerif Nerd Font Propo Thin Italic Semi-Condensed" checksum="(null)">
-  </resource>
-
-  <resource identifier="NotoSerif Nerd Font Propo Thin Semi-Condensed" checksum="(null)">
-  </resource>
-
   <resource identifier="NotoSerif Nerd Font Propo Ultra-Bold" checksum="(null)">
   </resource>
 
@@ -5248,28 +5122,52 @@
   <resource identifier="NotoSerif Nerd Font Propo Ultra-Bold Semi-Condensed" checksum="(null)">
   </resource>
 
-  <resource identifier="NotoSerif Nerd Font Propo Ultra-Light" checksum="(null)">
+  <resource identifier="NotoSerif Nerd Font Propo weight=250" checksum="(null)">
   </resource>
 
-  <resource identifier="NotoSerif Nerd Font Propo Ultra-Light Condensed" checksum="(null)">
+  <resource identifier="NotoSerif Nerd Font Propo weight=250" checksum="(null)">
   </resource>
 
-  <resource identifier="NotoSerif Nerd Font Propo Ultra-Light Extra-Condensed" checksum="(null)">
+  <resource identifier="NotoSerif Nerd Font Propo weight=250 Condensed" checksum="(null)">
   </resource>
 
-  <resource identifier="NotoSerif Nerd Font Propo Ultra-Light Italic" checksum="(null)">
+  <resource identifier="NotoSerif Nerd Font Propo weight=250 Condensed" checksum="(null)">
   </resource>
 
-  <resource identifier="NotoSerif Nerd Font Propo Ultra-Light Italic Condensed" checksum="(null)">
+  <resource identifier="NotoSerif Nerd Font Propo weight=250 Extra-Condensed" checksum="(null)">
   </resource>
 
-  <resource identifier="NotoSerif Nerd Font Propo Ultra-Light Italic Extra-Condensed" checksum="(null)">
+  <resource identifier="NotoSerif Nerd Font Propo weight=250 Extra-Condensed" checksum="(null)">
   </resource>
 
-  <resource identifier="NotoSerif Nerd Font Propo Ultra-Light Italic Semi-Condensed" checksum="(null)">
+  <resource identifier="NotoSerif Nerd Font Propo weight=250 Italic" checksum="(null)">
   </resource>
 
-  <resource identifier="NotoSerif Nerd Font Propo Ultra-Light Semi-Condensed" checksum="(null)">
+  <resource identifier="NotoSerif Nerd Font Propo weight=250 Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="NotoSerif Nerd Font Propo weight=250 Italic Condensed" checksum="(null)">
+  </resource>
+
+  <resource identifier="NotoSerif Nerd Font Propo weight=250 Italic Condensed" checksum="(null)">
+  </resource>
+
+  <resource identifier="NotoSerif Nerd Font Propo weight=250 Italic Extra-Condensed" checksum="(null)">
+  </resource>
+
+  <resource identifier="NotoSerif Nerd Font Propo weight=250 Italic Extra-Condensed" checksum="(null)">
+  </resource>
+
+  <resource identifier="NotoSerif Nerd Font Propo weight=250 Italic Semi-Condensed" checksum="(null)">
+  </resource>
+
+  <resource identifier="NotoSerif Nerd Font Propo weight=250 Italic Semi-Condensed" checksum="(null)">
+  </resource>
+
+  <resource identifier="NotoSerif Nerd Font Propo weight=250 Semi-Condensed" checksum="(null)">
+  </resource>
+
+  <resource identifier="NotoSerif Nerd Font Propo weight=250 Semi-Condensed" checksum="(null)">
   </resource>
 
   <resource identifier="NotoSerif Nerd Font Semi-Bold" checksum="(null)">
@@ -5299,30 +5197,6 @@
   <resource identifier="NotoSerif Nerd Font Semi-Condensed" checksum="(null)">
   </resource>
 
-  <resource identifier="NotoSerif Nerd Font Thin" checksum="(null)">
-  </resource>
-
-  <resource identifier="NotoSerif Nerd Font Thin Condensed" checksum="(null)">
-  </resource>
-
-  <resource identifier="NotoSerif Nerd Font Thin Extra-Condensed" checksum="(null)">
-  </resource>
-
-  <resource identifier="NotoSerif Nerd Font Thin Italic" checksum="(null)">
-  </resource>
-
-  <resource identifier="NotoSerif Nerd Font Thin Italic Condensed" checksum="(null)">
-  </resource>
-
-  <resource identifier="NotoSerif Nerd Font Thin Italic Extra-Condensed" checksum="(null)">
-  </resource>
-
-  <resource identifier="NotoSerif Nerd Font Thin Italic Semi-Condensed" checksum="(null)">
-  </resource>
-
-  <resource identifier="NotoSerif Nerd Font Thin Semi-Condensed" checksum="(null)">
-  </resource>
-
   <resource identifier="NotoSerif Nerd Font Ultra-Bold" checksum="(null)">
   </resource>
 
@@ -5347,28 +5221,52 @@
   <resource identifier="NotoSerif Nerd Font Ultra-Bold Semi-Condensed" checksum="(null)">
   </resource>
 
-  <resource identifier="NotoSerif Nerd Font Ultra-Light" checksum="(null)">
+  <resource identifier="NotoSerif Nerd Font weight=250" checksum="(null)">
   </resource>
 
-  <resource identifier="NotoSerif Nerd Font Ultra-Light Condensed" checksum="(null)">
+  <resource identifier="NotoSerif Nerd Font weight=250" checksum="(null)">
   </resource>
 
-  <resource identifier="NotoSerif Nerd Font Ultra-Light Extra-Condensed" checksum="(null)">
+  <resource identifier="NotoSerif Nerd Font weight=250 Condensed" checksum="(null)">
   </resource>
 
-  <resource identifier="NotoSerif Nerd Font Ultra-Light Italic" checksum="(null)">
+  <resource identifier="NotoSerif Nerd Font weight=250 Condensed" checksum="(null)">
   </resource>
 
-  <resource identifier="NotoSerif Nerd Font Ultra-Light Italic Condensed" checksum="(null)">
+  <resource identifier="NotoSerif Nerd Font weight=250 Extra-Condensed" checksum="(null)">
   </resource>
 
-  <resource identifier="NotoSerif Nerd Font Ultra-Light Italic Extra-Condensed" checksum="(null)">
+  <resource identifier="NotoSerif Nerd Font weight=250 Extra-Condensed" checksum="(null)">
   </resource>
 
-  <resource identifier="NotoSerif Nerd Font Ultra-Light Italic Semi-Condensed" checksum="(null)">
+  <resource identifier="NotoSerif Nerd Font weight=250 Italic" checksum="(null)">
   </resource>
 
-  <resource identifier="NotoSerif Nerd Font Ultra-Light Semi-Condensed" checksum="(null)">
+  <resource identifier="NotoSerif Nerd Font weight=250 Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="NotoSerif Nerd Font weight=250 Italic Condensed" checksum="(null)">
+  </resource>
+
+  <resource identifier="NotoSerif Nerd Font weight=250 Italic Condensed" checksum="(null)">
+  </resource>
+
+  <resource identifier="NotoSerif Nerd Font weight=250 Italic Extra-Condensed" checksum="(null)">
+  </resource>
+
+  <resource identifier="NotoSerif Nerd Font weight=250 Italic Extra-Condensed" checksum="(null)">
+  </resource>
+
+  <resource identifier="NotoSerif Nerd Font weight=250 Italic Semi-Condensed" checksum="(null)">
+  </resource>
+
+  <resource identifier="NotoSerif Nerd Font weight=250 Italic Semi-Condensed" checksum="(null)">
+  </resource>
+
+  <resource identifier="NotoSerif Nerd Font weight=250 Semi-Condensed" checksum="(null)">
+  </resource>
+
+  <resource identifier="NotoSerif Nerd Font weight=250 Semi-Condensed" checksum="(null)">
   </resource>
 
   <resource identifier="OpenDyslexicAlt Nerd Font" checksum="(null)">

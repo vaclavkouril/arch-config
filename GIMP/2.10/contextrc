@@ -1,7 +1,7 @@
 # GIMP user context
 
-(tool "gimp-eraser-tool")
-(paint-info "gimp-eraser")
+(tool "gimp-zoom-tool")
+(paint-info "gimp-paintbrush")
 (brush "2. Hardness 050")
 (dynamics "Dynamics Off")
 (mybrush "100% Opaque")
