@@ -1,3 +1,10 @@
+:q
+a !! 4
+a !! 2
+a
+let a = [1..6]
+a
+le a = [1..6]
 mapM_ print (allBalanced 5)
 mapM_ print (allBalanced 6)
 allBalanced 4
@@ -91,10 +98,3 @@ distinct_sum 500 2
 distinct_sum 500 2
 :l ramanujam.hs 
 distinct_sum 500 2
-:l ramanujam.hs 
-:l ramanujam.hs 
-:l ramanujam.hs 
-distinct_sum 500 2
-:l ramanujam.hs 
-distinct_sum 500 2
-:l ramanujam.hs 

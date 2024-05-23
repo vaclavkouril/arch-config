@@ -68,6 +68,9 @@ keys = [
     Key([mod], "Return", lazy.spawn(terminal), desc="Launchterminal"),
     Key([mod, "control"], "r", lazy.reload_config(), desc="Reload config"),
     Key([mod, "control"], "e", lazy.shutdown(), desc="Shutdown Qtile"),
+
+    Key([mod], "p", lazy.spawn("systemctl suspend"), desc="Sleep mode"),
+
     # Key([mod], "r", lazy.spawncmd(), desc="Spawn a command using a prompt"),
     Key([mod], "space", lazy.spawn("rofi -show drun")),
 
