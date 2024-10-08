@@ -5,3 +5,6 @@
 
 # Start picom
 picom --config ~/.config/picom/picom.conf &
+
+
+xmodmap ~/.Xmodmap

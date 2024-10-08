@@ -1,1 +1,13 @@
 _HiStOrY_V2_
+rotace([],[]).
+rotace([a],[a]).
+rotace([a,b],[b,a]).
+rotace([a,b],X).
+rotace([a,b,c],X).
+rotace([a,b,c,d],X).
+quit.
+rotace([a,b,c,d],X).
+rotace([a],[a]).
+rotace([],[]).
+make.
+rotace(X,[a,b,c,d]).

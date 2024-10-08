@@ -86,7 +86,15 @@ require('lazy').setup({
       'folke/neodev.nvim',
     },
   },
-
+  {
+    "lervag/vimtex",
+    lazy = false,     -- we don't want to lazy load VimTeX
+    -- tag = "v2.15", -- uncomment to pin to a specific release
+    init = function()
+      -- VimTeX configuration goes here, e.g.
+      vim.g.vimtex_view_method = "zathura"
+    end
+  },
   {
     -- Autocompletion
     'hrsh7th/nvim-cmp',
@@ -102,7 +110,12 @@ require('lazy').setup({
       'rafamadriz/friendly-snippets',
     },
   },
-
+  -- HAskell
+  {
+    'mrcjkb/haskell-tools.nvim',
+    version = '^3', -- Recommended
+    lazy = false, -- This plugin is already lazy
+  },
 
   -- Useful plugin to show you pending keybinds.
   {
@@ -430,6 +443,17 @@ require('lazy').setup({
     --
     --    For additional information see: https://github.com/folke/lazy.nvim#-structuring-your-plugins
     -- { import = 'custom.plugins' },
+  },
+
+  -- install with yarn or npm
+  {
+    "iamcco/markdown-preview.nvim",
+    cmd = { "MarkdownPreviewToggle", "MarkdownPreview", "MarkdownPreviewStop" },
+    build = "cd app && yarn install",
+    init = function()
+      vim.g.mkdp_filetypes = { "markdown" }
+    end,
+    ft = { "markdown" },
   },
   {}
 })

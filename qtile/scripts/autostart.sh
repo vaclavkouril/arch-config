@@ -32,6 +32,10 @@ function run {
 # run dex $HOME/.config/autostart/arcolinux-welcome-app.desktop &
 setxkbmap -layout us,cz -variant ,ucw -option grp:switch
 
+# clear Lock
+# keycode 66 = Control_L
+# add Control = Control_L
+
 wal -i ~/Wallpaper/wall.jpg &
 #Some ways to set your wallpaper besides variety or nitrogen
 #feh --bg-fill /usr/share/backgrounds/archlinux/arch-wallpaper.jpg &

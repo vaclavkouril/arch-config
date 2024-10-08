@@ -1,100 +1,100 @@
 :q
-a !! 4
-a !! 2
-a
-let a = [1..6]
-a
-le a = [1..6]
-mapM_ print (allBalanced 5)
-mapM_ print (allBalanced 6)
-allBalanced 4
-allBalanced 3
-allBalanced 2
-allBalanced 1
-:l test.hs 
-:l test.hs 
+main
 :q
-mapM_ print (allBalanced 4)
-allBalanced 3
-:l all_balanced_binary_tree.hs 
-allBalanced 3
-:l all_balanced_binary_tree.hs 
-allBalanced 3
-:l all_balanced_binary_tree.hs 
-allBalanced 3
-allBalanced 2
-mapM_ print (allBalanced 4)
-:l all_balanced_binary_tree.hs 
-:l all_balanced_binary_tree.hs 
-mapM_ print (allBalanced 4)
-        # TODO: validate if all are in the bounds
-allBalanced 3
-allBalanced 5
 :q
-allBalanced 5
-:l all_balanced_binary_tree.hs 
-allBalanced 2
-allBalanced 3
-mapM_ print (allBalanced 4)
-:l test.hs 
-allBalanced 3
-mapM_ print (allBalanced 4)
-allBalanced 3
-:l test.hs 
-allBalanced 2
-:l test.hs 
-:l test.hs 
-:l test.hs 
-:l test.hs 
-:l test.hs 
-allBalanced 2
-allBalanced 1
-allBalanced 0
-:l test.hs 
-:l all_balanced_binary_tree.hs 
-:l all_balanced_binary_tree.hs 
 :q
-distinct_sum 10000 2
-distinct_sum 1000000000 2
-distinct_sum 4000 2
-distinct_sum 100 3
-distinct_sum 10000 3
-distinct_sum 1000 2
 :q
-distinct_sum 100 2
-distinct_sum 4000 3
-distinct_sum 500 2
-:l ramanujam.hs 
-exit
-exit
-distinct_sum 500 2
-distinct_sum 4000 3
-:l ramanujam.hs 
-:l ramanujam.hs 
-distinct_sum 4000 3
-:l ramanujam.hs 
-distinct_sum 400 3
-distinct_sum 500 2
-:l ramanujam.hs 
-distinct_sum 500 2
-distinct_sum 5 3
-:l ramanujam.hs 
-distinct_sum 5 3
-distinct_sum 500 2
-:l ramanujam.hs 
-:l ramanujam.hs 
-:l ramanujam.hs 
-:l ramanujam.hs 
-:l ramanujam.hs 
-:l ramanujam.hs 
-distinct_sum 500 2
-:l ramanujam.hs 
-distinct_sum 500 2
-:l ramanujam.hs 
-:l ramanujam.hs 
-:l ramanujam.hs 
-distinct_sum 500 2
-:l ramanujam.hs 
-distinct_sum 500 2
-:l ramanujam.hs 
-distinct_sum 500 2
+:q
+runDFA (nfaToDfa $ regexToNFA (regexFromString "a(bc)*")) "abcbcc"
+runDFA (nfaToDfa $ regexToNFA (regexFromString "a(bc)*")) "abcbcbc"
+runDFA (nfaToDfa $ regexToNFA (regexFromString "a(bc)*")) "abcbc"
+runDFA (nfaToDfa $ regexToNFA (regexFromString "a(bc)*")) "abc"
+runDFA (nfaToDfa $ regexToNFA (regexFromString "a(bc)*")) "bc"
+runDFA (nfaToDfa $ regexToNFA (regexFromString "a(bc)*")) "a"
+runDfa (nfaToDfa $ regexToNFA (regexFromString "a(bc)*")) "a"
+:l RegexToNFA
+:l RegexToNFA
+runDfa (nfaToDfa $ regexToNFA (regexFromString "a(bc)*")) "a"
+runDfa (nfaToDfa $ regexToNFA (regexFromString "a(bc)*") "a"
+nfaToDfa $ regexToNFA (regexFromString "a(bc)*")
+:l RegexToNFA
+:l RegexToNFA FiniteAutomata
+:l RegexToNFA FiniteAutomata (nfaToDfa )
+:l RegexToNFA, FiniteAutomata
+ls
+:l RegexToNFA
+:l FiniteAutomata RegexToNFA.hs
+:l FiniteAutomata
+nfaToDfa $ regexToNFA (regexFromString "a(bc)*")
+regexToNFA (regexFromString "a(bc)*")
+regexFromString "a(bc)*"
+:q
+:l FiniteAutomata RegexToNFA:q
+reg = regexFromString
+:l FiniteAutomata RegexToNFA
+:q
+:q
+:q
+:q
+main
+:q
+regexFromString "(aaadsadsdasdas*)"
+regexFromString "(a*)"
+regexFromString "(a**)"
+regexFromString "(a)"
+regexFromString "()"
+regexFromString ")"
+regexFromString "()"
+regexFromString "()"
+regexFromString "(()"
+regexFromString ""
+regexFromString "|*"
+regexFromString "s*"
+regexFromString "*"
+regexFromString "a*"
+:l RegexToNFA
+regexFromString "a*"
+main 
+:l Main.hs 
+regexFromString "a(bc)*"
+regexFromString "a(bc)*"
+regexFromString "(a(bc)*)"
+regexFromString "(a|(bc)*)"
+regexFromString (a(bc)*)
+regexFromString a(bc)*
+:l RegexToNFA
+regexFromString
+:l Main
+:l Main
+:q
+main
+:q
+main
+:l Main
+main
+:l Main
+:l Main
+main
+:l Main
+main
+:l Main
+main
+:l Main
+:l Main
+fromString "((a|(aib)*))*"
+fromString "((a|(aib)*))*"
+:l Main.hs 
+fromString "((a|(aib)*))*"
+fromString "((a|(aib)*))*"
+fromString "((a|b))*"
+:l Main.hs 
+fromString "((a|b))*"
+fromString "(a|b)"
+toNFA 
+:l Main.hs 
+:l Main.hs 
+:l
+main
+:q
+:q
+:q

@@ -32,7 +32,7 @@ import subprocess
 # from typing import List  # noqa: F401
 from libqtile import layout, bar, widget, hook, qtile
 from libqtile.config import Drag, Group, Key, Match, Screen, Click  # , Rule
-from libqtile.command import lazy
+from libqtile.lazy import lazy
 # from libqtile.widget import Spacer
 from libqtile.utils import guess_terminal
 # import arcobattery
@@ -66,8 +66,8 @@ keys = [
     # SUPER + LAUNCH
 
     Key([mod], "Return", lazy.spawn(terminal), desc="Launchterminal"),
-    Key([mod, "control"], "r", lazy.reload_config(), desc="Reload config"),
-    Key([mod, "control"], "e", lazy.shutdown(), desc="Shutdown Qtile"),
+    Key([mod, mod2], "r", lazy.reload_config(), desc="Reload config"),
+    Key([mod, mod2], "e", lazy.shutdown(), desc="Shutdown Qtile"),
 
     Key([mod], "p", lazy.spawn("systemctl suspend"), desc="Sleep mode"),
 
@@ -102,46 +102,46 @@ keys = [
 
 
     # RESIZE UP, DOWN, LEFT, RIGHT
-    Key([mod, "control"], "l",
+    Key([mod, mod2], "l",
         lazy.layout.grow_right(),
         lazy.layout.grow(),
         lazy.layout.increase_ratio(),
         lazy.layout.delete(),
         ),
-    Key([mod, "control"], "Right",
+    Key([mod, mod2], "Right",
         lazy.layout.grow_right(),
         lazy.layout.grow(),
         lazy.layout.increase_ratio(),
         lazy.layout.delete(),
         ),
-    Key([mod, "control"], "h",
+    Key([mod, mod2], "h",
         lazy.layout.grow_left(),
         lazy.layout.shrink(),
         lazy.layout.decrease_ratio(),
         lazy.layout.add(),
         ),
-    Key([mod, "control"], "Left",
+    Key([mod, mod2], "Left",
         lazy.layout.grow_left(),
         lazy.layout.shrink(),
         lazy.layout.decrease_ratio(),
         lazy.layout.add(),
         ),
-    Key([mod, "control"], "k",
+    Key([mod, mod2], "k",
         lazy.layout.grow_up(),
         lazy.layout.grow(),
         lazy.layout.decrease_nmaster(),
         ),
-    Key([mod, "control"], "Up",
+    Key([mod, mod2], "Up",
         lazy.layout.grow_up(),
         lazy.layout.grow(),
         lazy.layout.decrease_nmaster(),
         ),
-    Key([mod, "control"], "j",
+    Key([mod, mod2], "j",
         lazy.layout.grow_down(),
         lazy.layout.shrink(),
         lazy.layout.increase_nmaster(),
         ),
-    Key([mod, "control"], "Down",
+    Key([mod, mod2], "Down",
         lazy.layout.grow_down(),
         lazy.layout.shrink(),
         lazy.layout.increase_nmaster(),
