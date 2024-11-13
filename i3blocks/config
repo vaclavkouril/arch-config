@@ -1,0 +1,47 @@
+# i3blocks config
+
+[general]
+interval=5
+colors=true
+
+# Battery Block (using acpi)
+[battery]
+command=acpi -b | cut -d ',' -f 2
+interval=30
+label=  Battery: 
+separator=false
+
+# WiFi Block
+[wireless]
+instance=wlan0
+command=iwgetid -r 2>/dev/null || echo "No WiFi"
+interval=5
+label=  
+separator=false
+
+# CPU Usage Block
+[cpu_usage]
+command=grep 'cpu ' /proc/stat | awk '{usage=($2+$4)*100/($2+$4+$5)} END {print usage "%"}'
+interval=5
+label=  CPU: 
+separator=false
+
+# Memory Block
+[memory]
+command=free -h | awk '/^Mem/ { print $3 }'
+interval=5
+label=RAM: 
+separator=false
+
+# Time Block
+[time]
+command=date '+ %Y-%m-%d  %H:%M:%S'
+interval=1
+separator=false
+
+# Volume Block (requires PulseAudio or ALSA)
+[volume]
+command=pamixer --get-volume-human
+interval=5
+label= Volume: 
+separator=false
