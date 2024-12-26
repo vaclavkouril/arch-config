@@ -35,8 +35,7 @@ setxkbmap -layout us,cz -variant ,ucw -option grp:switch
 # clear Lock
 # keycode 66 = Control_L
 # add Control = Control_L
-
-wal -i ~/Wallpaper/wall.jpg &
+# wal -i ~/Wallpaper/wall.jpg &
 #Some ways to set your wallpaper besides variety or nitrogen
 #feh --bg-fill /usr/share/backgrounds/archlinux/arch-wallpaper.jpg &
 #feh --bg-fill /usr/share/backgrounds/arcolinux/arco-wallpaper.jpg &
@@ -55,9 +54,9 @@ xss-lock -n /usr/lib/xsecurelock/dimmer -l -- xsecurelock &
 # run variety &
 # run nm-applet &
 # run pamac-tray &
-run xfce4-power-manager &
+# run xfce4-power-manager &
 numlockx on &
-blueberry-tray &
+# blueberry-tray &
 picom --config "$HOME/.config/qtile/scripts/picom.conf" &
 # /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
 /usr/lib/xfce4/notifyd/xfce4-notifyd &
