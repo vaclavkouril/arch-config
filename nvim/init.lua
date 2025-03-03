@@ -411,6 +411,10 @@ require('lazy').setup({
       build = ':TSUpdate',
     },
 
+    -- {
+    --   'dense-analysis/ale',
+    --   event = { "BufRead", "BufNewFile" },
+    -- },
 
     -- barbar line
     {
@@ -729,7 +733,7 @@ vim.o.tabstop = 4      -- A TAB character looks like 4 spaces
 vim.o.expandtab = true -- Pressing the TAB key will insert spaces instead of a TAB character
 vim.o.softtabstop = 4  -- Number of spaces inserted instead of a TAB character
 vim.o.shiftwidth = 4   -- Number of spaces inserted when indenting
-
+vim.wo.relativenumber = true
 
 
 
@@ -834,6 +838,17 @@ cmp.setup {
 
 require('lspconfig/prolog_lsp')
 require('lspconfig').prolog_lsp.setup{}
+-- vim.g.ale_linters = { c = { "cstyle" } }
 
+local ls = require("luasnip")
+
+-- Define the path to the snippets directory
+local snippets_path = vim.fn.stdpath("config") .. "/snippets"
+
+-- Load all snippets from the directory
+require("luasnip.loaders.from_lua").load({ paths = snippets_path })
 -- The line beneath this is called `modeline`. See `:help modeline`
 -- vim: ts=2 sts=2 sw=2 et
+-- vim.schedule(function()
+--   require("custom.cstyle")
+-- end)
