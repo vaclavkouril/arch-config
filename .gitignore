@@ -1,0 +1,19 @@
+# Runtime/audio state
+pulse/
+
+# Python caches
+__pycache__/
+*.py[cod]
+
+# Editor and backup artifacts
+*~
+*.bak
+nvim-backup/
+
+# Tool histories / telemetry
+swi-prolog/dir-history/
+ghc/ghci_history
+go/telemetry/
+
+# Optional OS noise
+.DS_Store
